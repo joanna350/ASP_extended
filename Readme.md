@@ -3,7 +3,8 @@
 - One is the complexity of kernel fitting > Automated Statician Project aimed to provide an end-to-end process
 - Another is computational cost to derivave inverse of covariance > Researchers have produced many ways to address this
 - This project combines the two and offers an automated solution
-- Runnable on any machine with drastic time reduction from Stochastic Variational Inference (SVI)
+- Drastic time reduction from Stochastic Variational Inference (SVI) compared to [baseline](http://proceedings.mlr.press/v64/kim_scalable_2016.pdf) work
+- Evaluation metric is Bayesian information criteria
 
 #### Environment:
 
