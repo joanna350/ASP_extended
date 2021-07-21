@@ -1,4 +1,11 @@
-#### ENVIRONMENT:
+### Project Scope
+- Gaussian Process has two main challenging features
+- One is the complexity of kernel fitting > Automated Statician Project aimed to provide an end-to-end process
+- Another is computational cost to derivave inverse of covariance > Researchers have produced many ways to address this
+- This project combines the two and offers an automated solution
+- Runnable on any machine with drastic time reduction from Stochastic Variational Inference (SVI)
+
+#### Environment:
 
 - Mac OS
 - python 3.5+ (say alias python3)
@@ -14,7 +21,7 @@ cd /path/to/climin
 pip install -e .
 ```
 
-#### MODIFY the optimization library
+#### Modify the optimization library
 
 - PARAMETERS TO CONTROL on Base.py
 
