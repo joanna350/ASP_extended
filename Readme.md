@@ -1,10 +1,10 @@
 ### Project Scope
 - Gaussian Process has two main challenging features
-- One is the complexity of kernel fitting > Automated Statician Project provides an end-to-end process
-- Another is computational cost to derivave inverse of covariance > Researches ongoing
-- This project combines the two and offers an automated solution
-- Drastic time reduction from Stochastic Variational Inference (SVI) and results on par with the [baseline](http://proceedings.mlr.press/v64/kim_scalable_2016.pdf)
-- Evaluation metric is Bayesian information criteria
+- One is the complexity of kernel fit. In the spirit of Automated Statician Project, the project offers kernel search through linear combination
+- Another is computational cost. It derives from taking the inverse of covariance. This is a field of active research in GP domain.
+- This project provides an automated solution to the combined challenge.
+- Similar effort was precedent, and was referred as the [baseline](http://proceedings.mlr.press/v64/kim_scalable_2016.pdf) of the result comparison. By deploying Stochastic Variational Inference, the code achieves massive reduction in time.
+- Evaluation metric for kernel fit is Bayesian information criteria
 
 #### Environment:
 
@@ -24,13 +24,14 @@ pip install -e .
 
 #### Modify the optimization library
 
-- PARAMETERS TO CONTROL on Base.py
-
+- Parameters to control on Base.py
+```
 - SVI: 1, 0
 - opt: 'sgd', 'adadelta', 'rprop'
 - max_iters: 1000 - 2500
-- savedir: to where you want to save plots
+- savedir: the path to save plots
 - line 102 - 112: parameters for optimizer
+```
 
 #### Run
 
