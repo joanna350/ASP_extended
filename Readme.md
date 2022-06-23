@@ -9,7 +9,7 @@
 #### Environment:
 
 - Mac OS
-- python 3.5+ (say alias python3)
+- python 3.5+
   
 ```
 pip install GPy
@@ -26,11 +26,11 @@ pip install -e .
 
 - Parameters to control on Base.py
 ```
-- SVI: 1, 0
-- opt: 'sgd', 'adadelta', 'rprop'
-- max_iters: 1000 - 2500
-- savedir: the path to save plots
-- line 102 - 112: parameters for optimizer
+SVI: 1, 0
+opt: 'sgd', 'adadelta', 'rprop'
+max_iters: 1000 - 2500
+savedir: the path to save plots
+line 102 - 112: parameters for optimizer
 ```
 
 #### Run
