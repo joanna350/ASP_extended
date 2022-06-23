@@ -1,9 +1,9 @@
 ### Project Scope
-- Gaussian Process has two main challenging features
-- One is the complexity of kernel fit. In the spirit of Automated Statician Project, the project offers kernel search through linear combination
-- Another is computational cost. It derives from taking the inverse of covariance. This is a field of active research in GP domain.
+- Gaussian Process is nonparametric regression model with two main challenging features.
+- One is the complexity of kernel fit. In the spirit of Automated Statician Project, the project offers kernel search through linear combination.
+- Another is computational cost. It derives from taking the inverse of covariance, O(n^3). This is a field of active research in GP domain.
 - This project provides an automated solution to the combined challenge.
-- Similar effort was precedent, and was referred as the [baseline](http://proceedings.mlr.press/v64/kim_scalable_2016.pdf) of the result comparison. By deploying Stochastic Variational Inference, the code achieves massive reduction in time.
+- Similar effort was precedent, and was referred as the [baseline](http://proceedings.mlr.press/v64/kim_scalable_2016.pdf) of the result comparison. By deploying Stochastic Variational Inference, the code achieves reduction to O(m^3), seen in result.
 - Evaluation metric for kernel fit is Bayesian information criteria
 
 #### Environment:
